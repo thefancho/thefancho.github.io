@@ -20,12 +20,7 @@ body {
     position: relative;
     margin: 0; /* Evita huecos */
     padding: 0; /* Evita huecos */
-}
-.hero {
-    height: 100vh;
-    background: url("https://picsum.photos/1200/800") center/cover no-repeat;
-    position: relative;
-    color: white;
+    background:url("https://picsum.photos/1200/800") center/cover no-repeat ;
 }
 .hero::before {
     content: "";
@@ -205,6 +200,7 @@ section h2 {
         font-size: 1rem;
     }
 }
+
 
 
 
