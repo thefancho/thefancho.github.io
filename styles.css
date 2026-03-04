@@ -7,17 +7,38 @@ body {
     color: #333;
 }
 
-/* HERO ocupa toda la pantalla */
+/* HERO ocupa toda la pantalla real */
 .hero {
     height: 100vh; /* Toda la pantalla */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #222; /* Fondo oscuro */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background: #222;
     color: white;
     position: relative;
+    margin: 0; /* Evita huecos */
+    padding: 0; /* Evita huecos */
 }
+.hero {
+    height: 100vh;
+    background: url("https://picsum.photos/1200/800") center/cover no-repeat;
+    position: relative;
+    color: white;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.762);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+
 
 /* NAV dentro del hero */
 .hero-nav {
@@ -69,6 +90,7 @@ body {
     font-size: 1.3rem;
     opacity: 0.85;
 }
+
 
 
 
@@ -183,4 +205,8 @@ section h2 {
         font-size: 1rem;
     }
 }
+
+
+
+
 
