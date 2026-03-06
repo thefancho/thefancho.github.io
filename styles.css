@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background:url("https://picsum.photos/seed/hero/1200/800") center/cover no-repeat;
+    background:url("https://picsum.photos/1200/800") center/cover no-repeat;
 
 
     color: white;
@@ -204,6 +204,7 @@ section h2 {
         font-size: 1rem;
     }
 }
+
 
 
 
