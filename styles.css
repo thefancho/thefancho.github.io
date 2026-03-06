@@ -9,19 +9,22 @@ body {
 
 /* HERO ocupa toda la pantalla real */
 .hero {
-    height: 100vh; /* Toda la pantalla */
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    background: #222;
+    justify-content: center;
+    align-items: center;
+
+    background:url("https://picsum.photos/seed/hero/1200/800") center/cover no-repeat;
+
+
     color: white;
     position: relative;
-    margin: 0; /* Evita huecos */
-    padding: 0; /* Evita huecos */
-    background:url("https://picsum.photos/1200/800") center/cover no-repeat ;
+    margin: 0;
+    padding: 0;
 }
+
 .hero::before {
     content: "";
     position: absolute;
@@ -91,7 +94,7 @@ body {
 
 
 /* Secciones */
-section {
+section:not(.hero) {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
@@ -99,6 +102,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 
 section h2 {
     margin-top: 0;
@@ -200,7 +204,6 @@ section h2 {
         font-size: 1rem;
     }
 }
-
 
 
 
